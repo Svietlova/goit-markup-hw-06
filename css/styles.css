@@ -83,11 +83,15 @@ img {
     padding-bottom: 48px;
 }
 .container {
+    min-width: 320px;
     max-width: 428px;
     padding-left: 16px;
     padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
+
+    outline: 2px solid #BF152E;
+    outline-offset: -2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -112,11 +116,29 @@ img {
 }
 /**
   |============================
+  | Header styles
+  |============================
+*/
+/* .logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris);
+
+    margin-right: 76px;
+} */
+.menu-icon {
+    stroke: var(--navyblue);
+}
+/**
+  |============================
   | Hero styles
   |============================
 */
 .hero-sect {
-    /* max-width: 428px; */
     padding: 112px 0;
     margin: 0 auto;
 
@@ -231,11 +253,6 @@ img {
 .benefits {
     padding: 96px 0;
 }
-.benefits-list {
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
-}
 .icon-container {
     display: flex;
     align-items: center;
@@ -258,9 +275,14 @@ img {
     text-align: start;
     font-weight: 500;
 }
+@media screen and (max-width: 767.98px) {
+    .benefits-list-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+}
 @media screen and (min-width: 768px) {
     .benefits-list {
-        flex-direction: row;
+        display: flex;
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
@@ -274,7 +296,7 @@ img {
         text-align: start;
     }
 }
-@media screen and (max-width: 1157.9px) {
+@media screen and (max-width: 1157.98px) {
     .icon-container {
         display: none;
     }
@@ -284,7 +306,6 @@ img {
         padding: 120px 0;
     }
     .benefits-list {
-        display: flex;
         flex-direction: row;
         gap: 24px;
     }
@@ -404,6 +425,9 @@ img {
     fill: currentColor;
 }
 @media screen and (min-width: 768px) {
+    /* .team-cont {
+        max-width: 582px;
+    } */
     .team-list {
         row-gap: 72px;
         column-gap: 24px;
@@ -443,7 +467,6 @@ img {
 }
 .cust-list {
     display: flex;
-    min-width: 396px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -495,4 +518,37 @@ img {
     .cust-item {
         flex-basis: calc((100% - 120px) / 6);
     }
+}
+/**
+  |============================
+  | Footer styles
+  |============================
+*/
+.footer {
+    color: var(--cornflover);
+    background-color: var(--navyblue);
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.footer-container {
+    min-width: 396px;
+    margin: 0 auto;
+}
+.footer-logo-container {
+    
+}
+.foot-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris);
+}
+.accent-ligth {
+    color: var(--cloud);
+}
+.footer-text {
+
 }

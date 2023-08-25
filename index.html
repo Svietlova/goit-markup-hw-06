@@ -22,7 +22,7 @@
 
   <body>
     <header class="header">
-      <!-- <div class="header-container container">
+      <div class="header-container container">
         <nav class="header-nav">
           <a href="./index.html" class="logo link"
             >Web<span class="accent-dark">Studio</span></a
@@ -46,6 +46,11 @@
             </li>
           </ul>
         </nav>
+        <button class="menu-btn" type="button">
+          <svg class="menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="address">
           <ul class="address-list list">
             <li>
@@ -60,7 +65,7 @@
             </li>
           </ul>
         </address>
-      </div> -->
+      </div>
     </header>
 
     <main>
@@ -78,7 +83,7 @@
       <section class="benefits section">
         <div class="container">
           <h2 class="visually-hidden">Benefits</h2>
-          <ul class="list benefits-list benefits-set">
+          <ul class="list benefits-list">
             <li class="benefits-list-item">
               <div class="icon-container">
                 <svg class="benefits-icon" width="64" height="64">
@@ -166,11 +171,12 @@
 
       <!-- team section -->
       <section class="team">
-        <div class="container">
+        <div class="container team-cont">
           <h2 class="second-title">Our Team</h2>
           <ul class="list card-set team-list">
             <li class="team-card card-set-team">
               <img
+                srcset="./images/img/team1.jpg 1x, ./images/img/team1@2x.jpg 2x"
                 src="./images/img/team1.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -213,6 +219,7 @@
             </li>
             <li class="team-card card-set-team">
               <img
+                srcset="./images/img/team2.jpg 1x, ./images/img/team2@2x.jpg 2x"
                 src="./images/img/team2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -256,6 +263,7 @@
             </li>
             <li class="team-card card-set-team">
               <img
+                srcset="./images/img/team3.jpg 1x, ./images/img/team3@2x.jpg 2x"
                 src="./images/img/team3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -299,6 +307,7 @@
             </li>
             <li class="team-card card-set-team">
               <img
+                srcset="./images/img/team4.jpg 1x, ./images/img/team4@2x.jpg 2x"
                 src="./images/img/team4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -399,7 +408,7 @@
     <!-- <footer class="footer">
       <div class="footer-container container">
         <div class="footer-logo-container">
-          <a href="./index.html" class="logo link foot-logo"
+          <a href="./index.html" class="link foot-logo"
             >Web<span class="accent-ligth">Studio</span></a
           >
           <p class="footer-text">
