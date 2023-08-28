@@ -3,9 +3,6 @@
   | Header styles
   |============================
 */
-.logo {
-margin-right: 76px;
-}
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -13,6 +10,9 @@ margin-right: 76px;
 .header-nav {
     display: flex;
     align-items: center;
+}
+.logo {
+    margin-right: 76px;
 }
 .nav-list {
     display: flex;
