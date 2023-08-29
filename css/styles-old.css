@@ -3,78 +3,9 @@
   | Header styles
   |============================
 */
-.header-container {
-    display: flex;
-    justify-content: space-between;
-}
-.header-nav {
-    display: flex;
-    align-items: center;
-}
-.logo {
-    margin-right: 76px;
-}
-.nav-list {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-.nav-link {
-    position: relative;
 
-    color: var(--navyblue);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
 
-    padding-top: 24px;
-    padding-bottom: 24px;
 
-    transition: color var(--animation);
-}
-.nav-link::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-}
-.nav-link.current::after {
-    background-color: var(--ocean);
-}
-.nav-link.current {
-    color: var(--ocean);
-}
-.nav-link:hover,
-.nav-link:active {
-    color: var(--ocean);
-}
-.nav-link:focus {
-    color: var(--ocean);
-}
-.address {
-    font-style: normal;
-    display: flex;
-}
-.address-list {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-}
-.address-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate);
-
-    transition: color var(--animation);
-}
 .address-link:hover,
 .address-link:active {
     color: var(--ocean);
